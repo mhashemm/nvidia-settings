@@ -49,9 +49,9 @@ LDFLAGS += $(XNVCTRL_LDFLAGS)
 ##############################################################################
 
 .PHONY: all
-all: $(LIBXNVCTRL)
+all: $(LIBXNVCTRL) $(LIBXNVCTRL_SHARED)
 
 .PHONY: clean
 clean:
-	rm -rf $(LIBXNVCTRL) *~ \
-		$(OUTPUTDIR)/*.o $(OUTPUTDIR)/*.d
+	rm -rf $(LIBXNVCTRL) $(LIBXNVCTRL_SHARED) *~ \
+		$(OUTPUTDIR)/*.o $(OUTPUTDIR)/*.d $(OUTPUTDIR)/*.so.*
