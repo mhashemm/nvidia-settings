@@ -1,0 +1,4 @@
+cd src/libXNVCtrl
+make
+cp _out/Linux_x86_64/libXNVCtrl.* /usr/lib/
+cp *.h /usr/include/NVCtrl/
